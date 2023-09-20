@@ -1,8 +1,11 @@
-// match vowel
-let bgRegex = /b[aiu]g/
+//Constructor
+let myRegexConst = new RegExp('abc')
+//Literal
+let myRegex = /abc/
 
-let qouteSample = "Beware of bugs in the above code; I have only proved it correct"
-let vowelRegex = /[aeiou]/ig
+let regex = /hello/i
+let str = "Hello World!"
 
-let result = qouteSample.match(vowelRegex)
-console.log("Result:: ", result)
+const result = regex.test(str)
+
+console.log("result:: ", result)
